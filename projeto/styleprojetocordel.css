@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Anton', sans-serif;
+    --fonte3: 'Caveat', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: antiquewhite;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 60px;
+}
+
+header > h1 {
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 5vw; /* 5% da largura da tela */
+}
+
+a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;  /* 10% da altura na parte de cima - 10vh: 10% da altura*/  
+    padding-bottom: 10vh; /* 10% da altura na parte de baixo - 10vh: 10% da altura */ 
+    line-height: 2em;   /* Espaçamento duplo entre linhas */
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2.5vw;
+}
+
+section > p{
+    padding-bottom: 1em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(148, 148, 189);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.356);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ section#imagem01{
+    background-image: url('assets/background001.jpg');
+    background-position: center center;
+ }
+
+ section#imagem02{
+    background-image: url('assets/background002.jpg');
+    background-position: center center;
+ }
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.509);
+    display: inline-block;
+    padding: 5px;
+}
+
+section.normal> p#ultimo{
+    padding-bottom: 0px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
